@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  postgres_nlw:
+    container_name: automacaoPython5
+    image: postgres
+    ports: 
+      - "5534:5534"
+
+  environment:     
+    POSTGRES_USER=admin
+    POSTGRES_PASSWORD=admin
